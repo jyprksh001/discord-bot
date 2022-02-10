@@ -20,7 +20,7 @@ export default async function PromoteNewJob(_job: Job, client: any) {
     if (!job.companyName) throw new Error('Company name is required')
     if (!(job.bitlyLink || job.canonicalURL)) throw new Error('Job URL is required')
   }
-
+  
   const message = FormatJobMessage(job)
   const guilds = await client.guilds.fetch()
   console.log(`Promoting in ${guilds.size} guild(s):`)

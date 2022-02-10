@@ -1,4 +1,4 @@
-import dbConnect from 'components/database'
+import dbConnect from '@/components/servers/DatabaseServer'
 import { Types } from 'mongoose'
 import Guild from 'models/Guild'
 
