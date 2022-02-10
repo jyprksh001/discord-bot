@@ -12,7 +12,8 @@
     "build": "rimraf ./build && tsc",
     "postinstall": "tsc",
     "lint": "eslint . --ext .ts",
-    "test": "mocha"
+    "test": "mocha",
+    "seed": "NODE_ENV=dev node commands.js"
   },
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
@@ -52,6 +53,5 @@
   },
   "engines": {
     "node": ">=16"
-  },
-  "type": "module"
+  }
 }
